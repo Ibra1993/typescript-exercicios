@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Cliente_1 = require("./Cliente");
+var GeradorPessoas_1 = require("./GeradorPessoas");
+var Pessoa_1 = require("./Pessoa");
+var ciente1 = new Cliente_1.Cliente("Barlsessi", "Có", 23, "000.090.000-54", 2018116025);
+var pessoa1 = new Pessoa_1.Pessoa("Lugó", "Turma de amendoim", 44, "999.090.000-00");
+var gerador = new GeradorPessoas_1.GeradorPessoas();
+gerador.inserirPessoa(pessoa1);
+console.log(gerador.listar);
+console.log(ciente1.apresentar());
