@@ -5,7 +5,8 @@ export abstract class Personagem {
 
     atacar(personagem: Personagem): void {
         
-    console.log(`${this.nome} está atacando...`);   
+    // console.log(`${this.nome} está atacando...`);   
+    this.bordao();
     personagem.perderVida(this.ataque);
 
     }

@@ -8,7 +8,8 @@ var Personagem = /** @class */ (function () {
         this.vida = vida;
     }
     Personagem.prototype.atacar = function (personagem) {
-        console.log("".concat(this.nome, " est\u00E1 atacando..."));
+        // console.log(`${this.nome} está atacando...`);   
+        this.bordao();
         personagem.perderVida(this.ataque);
     };
     Personagem.prototype.perderVida = function (forcarAtaque) {
