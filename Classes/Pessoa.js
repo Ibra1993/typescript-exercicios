@@ -3,6 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Pessoa = void 0;
 var Pessoa = /** @class */ (function () {
     function Pessoa(nome, sobrenome, idade, cpf) {
+        if (nome === void 0) { nome = ""; }
+        if (sobrenome === void 0) { sobrenome = ""; }
+        if (idade === void 0) { idade = 0; }
+        if (cpf === void 0) { cpf = ""; }
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.idade = idade;

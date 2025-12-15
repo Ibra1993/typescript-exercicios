@@ -7,7 +7,7 @@ export class Pessoa{
     private cpf: string;
 
 
-    constructor(nome: string, sobrenome: string, idade: number, cpf: string){
+    constructor(nome: string = "", sobrenome: string = "", idade: number = 0, cpf: string = ""){
          this.nome = nome;
          this.sobrenome = sobrenome;
          this.idade = idade;
@@ -23,6 +23,7 @@ export class Pessoa{
     public getSobreNome(): string{
         return this.sobrenome;
     }
+    
 
    public getIdade(): number{
     return this.idade;

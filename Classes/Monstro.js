@@ -15,18 +15,16 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Cliente = void 0;
-var Pessoa_1 = require("./Pessoa");
-var Cliente = /** @class */ (function (_super) {
-    __extends(Cliente, _super);
-    function Cliente(nome, sobrenome, idade, cpf, matricula) {
-        var _this = _super.call(this, nome, sobrenome, idade, cpf) || this;
-        _this.matricula = matricula || 0;
-        return _this;
+exports.Monstro = void 0;
+var Personagem_1 = require("./Personagem");
+var Monstro = /** @class */ (function (_super) {
+    __extends(Monstro, _super);
+    function Monstro() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-    Cliente.prototype.apresentar = function () {
-        return "".concat(_super.prototype.apresentar.call(this), ", minha matr\u00EDcula: ").concat(this.matricula, ".");
+    Monstro.prototype.bordao = function () {
+        console.log("MONNNNNNNNNNNNNNNNNNNNNNSTERRRRRRRRRRRRRRRRRRRRRRRR!!!");
     };
-    return Cliente;
-}(Pessoa_1.Pessoa));
-exports.Cliente = Cliente;
+    return Monstro;
+}(Personagem_1.Personagem));
+exports.Monstro = Monstro;
