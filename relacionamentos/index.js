@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Caneta_1 = require("./Caneta");
+var Escritor_1 = require("./Escritor");
+var MaquinaEscrever_1 = require("./MaquinaEscrever");
+var escritor = new Escritor_1.Escritor('Luiz');
+var caneta = new Caneta_1.Caneta('Bic');
+var maquinaEscrever = new MaquinaEscrever_1.MaquinaEscrever('Xerox');
+console.log(escritor.nome);
+console.log(caneta.nome);
+console.log(maquinaEscrever.nome);
+escritor.ferramenta = caneta;
+escritor.escrever();
