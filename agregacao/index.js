@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var CarrinhoDeCompras_1 = require("./CarrinhoDeCompras");
+var Produto_1 = require("./Produto");
+var produto1 = new Produto_1.Produto('Camiseta', 49.9);
+var produto2 = new Produto_1.Produto('Blusa', 59.9);
+var produto3 = new Produto_1.Produto('Calça Jeans', 79.9);
+var produto4 = new Produto_1.Produto('Camiseta', 19.9);
+var carrinhoDeCompras = new CarrinhoDeCompras_1.CarrinhoDeCompras();
+carrinhoDeCompras.inserirProdutos(produto1, produto2, produto3, produto4);
+var qtd = carrinhoDeCompras.quantidadeProdutos();
+console.log(carrinhoDeCompras);
+console.log('Quantodade: ', qtd);
