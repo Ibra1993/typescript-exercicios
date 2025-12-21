@@ -12,6 +12,6 @@ carrinhoDeCompras.inserirProdutos(produto1, produto2, produto3, produto4);
 const qtd = carrinhoDeCompras.quantidadeProdutos();
 
 console.log(carrinhoDeCompras);
-console.log('Quantodade: ', qtd);
+console.log('Quantidade: ', qtd);
 
 
