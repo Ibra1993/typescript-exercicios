@@ -24,11 +24,12 @@ export class Escritor {
     escrever(): void {
 
         if(this._ferramenta === null) {
+
             console.log('Não posso escrever sem ferramenta...');
             return;
        
-        
         }
+        
         this._ferramenta.escrever();
     }
 
