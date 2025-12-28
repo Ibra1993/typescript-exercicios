@@ -1,7 +1,7 @@
 import { MyDatabaseClassic } from "./my-database-classic.js";
 
 
-const myDatabaseClassic = MyDatabaseClassic.getInstance();
+const myDatabaseClassic = MyDatabaseClassic.instance;
 
 myDatabaseClassic.add({name: 'Ibra', age: 32});
 myDatabaseClassic.add({name: 'Luiz', age: 30});
